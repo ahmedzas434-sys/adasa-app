@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family:
+      "Tajawal",
+      system-ui,
+      -apple-system,
+      sans-serif;
+  }
+
+  ::selection {
+    background-color: var(--color-orange-500);
+    color: #fff;
+  }
+
+  html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+}
+
+@layer components {
+  .centerByFlex {
+    @apply flex items-center justify-center;
+  }
+
+  .opacityElementStyle {
+    @apply animate-[opacityElement_1s_ease-in-out_infinite_alternate] rounded-full bg-orange-500;
+  }
+
+  .buttonFooter {
+    @apply cursor-pointer rounded-lg border border-neutral-800 bg-neutral-900 p-3 transition-all hover:border-orange-500;
+  }
+
+  .btnGlobal {
+    background: linear-gradient(135deg, rgb(249, 115, 22), rgb(234, 88, 12));
+    @apply cursor-pointer rounded-full px-8 py-4 text-sm font-semibold text-white;
+  }
+
+  .baseTransition {
+    @apply transition-all duration-300;
+  }
+}
+
+

@@ -1,0 +1,5 @@
+@keyframes opacityElement{
+  to{
+    opacity: .5;
+  }
+}
