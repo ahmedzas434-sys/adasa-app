@@ -746,7 +746,7 @@ export default function Blog() {
 
   function scroolToTop() {
     scrollTo({
-      top: 100,
+      top: 0,
       behavior: "smooth",
     });
   }
