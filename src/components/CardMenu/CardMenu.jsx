@@ -36,6 +36,7 @@ export default function CardMenu({
       >
         <div className="relative h-52 w-full overflow-hidden md:h-auto md:w-72 lg:w-80">
           <img
+          loading="lazy"
             src={image}
             alt={role}
             className="baseTransition size-1/1 group-hover:scale-103 max-md:object-cover"
@@ -68,6 +69,7 @@ export default function CardMenu({
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
+              loading="lazy"
                 className="size-10 rounded-full object-cover"
                 src={avatar}
                 alt={role}

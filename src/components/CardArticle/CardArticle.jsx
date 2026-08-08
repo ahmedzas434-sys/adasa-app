@@ -11,7 +11,8 @@ export default function CardArticle({el:{id,image,category,readTime,title,author
         })
       }} className="group relative overflow-hidden rounded-2xl border border-neutral-800 transition-all duration-500 hover:border-orange-500/30">
         <div className="relative overflow-hidden">
-          <img
+          <img 
+          loading="lazy"
             src={image}
             className="baseTransition h-48 w-full duration-500 group-hover:scale-110"
             alt={name}
@@ -30,6 +31,7 @@ export default function CardArticle({el:{id,image,category,readTime,title,author
           <div className="flex items-center justify-between text-sm text-neutral-500">
             <div className="flex items-center gap-2">
               <img
+              loading="lazy"
                 src={avatar}
                 className="size-6 rounded-full"
                 alt={name}

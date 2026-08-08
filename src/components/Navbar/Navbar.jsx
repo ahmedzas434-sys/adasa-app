@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import image from "../../assets/images/image11.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faMagnifyingGlass, faX } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faMagnifyingGlass,
+  faX,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
@@ -17,6 +21,7 @@ export default function Navbar() {
         <div className="relative flex items-center justify-between py-4 xl:container xl:mx-auto">
           <Link to="/" className="group flex cursor-pointer items-center gap-2">
             <img
+              loading="eager"
               className="size-12 duration-80 group-hover:scale-105"
               src={image}
               alt="logo"
@@ -75,7 +80,10 @@ export default function Navbar() {
 
           <div className="flex items-center gap-3 max-md:hidden">
             <div className="centerByFlex group size-11 cursor-pointer rounded-xl border border-transparent transition hover:border-[#262626]">
-             <FontAwesomeIcon icon={faMagnifyingGlass} className="text-base text-neutral-500 transition group-hover:text-orange-500"/>
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                className="text-base text-neutral-500 transition group-hover:text-orange-500"
+              />
             </div>
 
             <Link
@@ -107,10 +115,10 @@ export default function Navbar() {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `rounded-xl py-3 px-4 border text-sm font-medium transition-all duration-300 ${
+                  `rounded-xl border px-4 py-3 text-sm font-medium transition-all duration-300 ${
                     isActive
-                      ? "border-orange-500 text-orange-500 bg-orange-500/10"
-                      : "text-neutral-400 hover:text-white border-transparent hover:bg-[#1a1a1a]"
+                      ? "border-orange-500 bg-orange-500/10 text-orange-500"
+                      : "border-transparent text-neutral-400 hover:bg-[#1a1a1a] hover:text-white"
                   }`
                 }
               >
@@ -120,10 +128,10 @@ export default function Navbar() {
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
-                  `rounded-xl py-3 px-4 border text-sm font-medium transition-all duration-300 ${
+                  `rounded-xl border px-4 py-3 text-sm font-medium transition-all duration-300 ${
                     isActive
-                      ? "border-orange-500 text-orange-500 bg-orange-500/10"
-                      : "text-neutral-400 hover:text-white border-transparent hover:bg-[#1a1a1a]"
+                      ? "border-orange-500 bg-orange-500/10 text-orange-500"
+                      : "border-transparent text-neutral-400 hover:bg-[#1a1a1a] hover:text-white"
                   }`
                 }
               >
@@ -133,10 +141,10 @@ export default function Navbar() {
               <NavLink
                 to="/whoAreWe"
                 className={({ isActive }) =>
-                  `rounded-xl py-3 px-4 border text-sm font-medium transition-all duration-300 ${
+                  `rounded-xl border px-4 py-3 text-sm font-medium transition-all duration-300 ${
                     isActive
-                      ? "border-orange-500 text-orange-500 bg-orange-500/10"
-                      : "text-neutral-400 hover:text-white border-transparent hover:bg-[#1a1a1a]"
+                      ? "border-orange-500 bg-orange-500/10 text-orange-500"
+                      : "border-transparent text-neutral-400 hover:bg-[#1a1a1a] hover:text-white"
                   }`
                 }
               >

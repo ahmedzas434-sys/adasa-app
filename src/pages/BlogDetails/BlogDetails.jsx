@@ -774,6 +774,7 @@ export default function BlogDetails() {
             <div className="inline-flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
               <div className="size-[59.2px] overflow-hidden rounded-full border-2 border-orange-500">
                 <img
+                loading="lazy"
                   src={`${avatar}`}
                   alt={name}
                   className="rounded-full object-cover"
@@ -881,6 +882,7 @@ export default function BlogDetails() {
                 <div className="flex gap-5 rounded-2xl border border-[#262626] bg-[#111111] p-6">
                   <div className="size-26 overflow-hidden rounded-xl border-4 border-orange-500/20">
                     <img
+                    loading="lazy"
                       src={avatar}
                       alt={name}
                       className="size-full object-cover"

@@ -34,6 +34,7 @@ export default function Card({
       >
         <div className="relative">
           <img
+          loading="lazy"
             className="h-52 w-full object-cover object-top transition-all duration-500 group-hover:scale-105"
             src={image}
             alt={role}
@@ -58,7 +59,7 @@ export default function Card({
 
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img className="size-9 rounded-full" src={avatar} alt={name} />
+              <img loading="lazy" className="size-9 rounded-full" src={avatar} alt={name} />
               <div>
                 <h4 className="text-sm font-medium text-white">{name}</h4>
                 <p className="text-[12px] text-neutral-500">{role}</p>

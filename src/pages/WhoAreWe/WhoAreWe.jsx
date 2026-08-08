@@ -324,6 +324,7 @@ export default function WhoAreWe() {
               >
                 <div className="relative mx-auto size-25 group-hover:border-orange-500/30 rounded-full border-4 baseTransition border-neutral-800">
                   <img
+                  loading="lazy"
                     src={person.avatar}
                     alt={person.name}
                     className="size-full rounded-full object-cover object-center"
