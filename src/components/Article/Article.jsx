@@ -1,6 +1,5 @@
 import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Article.css"
 import React from "react";
 
 export default function Article({ isIcon, textOne, hText, spanText, pText }) {
