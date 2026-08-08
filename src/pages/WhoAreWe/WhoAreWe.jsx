@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faArrowLeft,
   faBolt,
   faBookOpen,
   faUserGroup,
@@ -74,147 +73,147 @@ export default function WhoAreWe() {
   ];
 
   const team = [
-  {
-    name: "عمر خالد",
-    role: "مصور طبيعة",
-    avatar: image01,
-  },
-  {
-    name: "سيف محمد",
-    role: "مصور بورتريه",
-    avatar: image02,
-  },
-  {
-    name: "كريم أحمد",
-    role: "مصور محترف",
-    avatar: image03,
-  },
-  {
-    name: "رامي حسن",
-    role: "مصور رحلات",
-    avatar: image04,
-  },
-  {
-    name: "طارق محمود",
-    role: "مصور استوديو",
-    avatar: image05,
-  },
-  {
-    name: "يوسف علي",
-    role: "مصور شوارع",
-    avatar: image06,
-  },
-  {
-    name: "مروان عبدالله",
-    role: "مصور أعراس",
-    avatar: image07,
-  },
-  {
-    name: "زياد سامي",
-    role: "مصور مواليد",
-    avatar: image08,
-  },
-  {
-    name: "أنس وليد",
-    role: "فنان بصري",
-    avatar: image09,
-  },
-  {
-    name: "حسام ناصر",
-    role: "مصور طبيعة",
-    avatar: image10,
-  },
-  {
-    name: "فهد خالد",
-    role: "مصور بورتريه",
-    avatar: image12,
-  },
-  {
-    name: "باسم عمر",
-    role: "مصور محترف",
-    avatar: image13,
-  },
-  {
-    name: "رامز سعيد",
-    role: "مصور رحلات",
-    avatar: image14,
-  },
-  {
-    name: "وليد مازن",
-    role: "مصور استوديو",
-    avatar: image15,
-  },
-  {
-    name: "عادل ياسر",
-    role: "مصور شوارع",
-    avatar: image16,
-  },
-  {
-    name: "معاذ إبراهيم",
-    role: "مصور أعراس",
-    avatar: image17,
-  },
-  {
-    name: "رائد فهد",
-    role: "مصور مواليد",
-    avatar: image18,
-  },
-  {
-    name: "نبيل سامر",
-    role: "فنان بصري",
-    avatar: image19,
-  },
-  {
-    name: "أيمن حمد",
-    role: "مصور طبيعة",
-    avatar: image20,
-  },
-  {
-    name: "خالد يحيى",
-    role: "مصور بورتريه",
-    avatar: image21,
-  },
-  {
-    name: "حازم علي",
-    role: "مصور محترف",
-    avatar: image22,
-  },
-  {
-    name: "معتز حسن",
-    role: "مصور رحلات",
-    avatar: image23,
-  },
-  {
-    name: "شادي محمود",
-    role: "مصور استوديو",
-    avatar: image24,
-  },
-  {
-    name: "إياد محمد",
-    role: "مصور شوارع",
-    avatar: image25,
-  },
-  {
-    name: "بدر أحمد",
-    role: "مصور أعراس",
-    avatar: image26,
-  },
-  {
-    name: "سامح عبدالله",
-    role: "مصور مواليد",
-    avatar: image27,
-  },
-  {
-    name: "لؤي خالد",
-    role: "فنان بصري",
-    avatar: image28,
-  },
-  {
-    name: "عصام نادر",
-    role: "مصور مواليد",
-    avatar: image29,
-  },
-];
+    {
+      name: "عمر خالد",
+      role: "مصور طبيعة",
+      avatar: image01,
+    },
+    {
+      name: "سيف محمد",
+      role: "مصور بورتريه",
+      avatar: image02,
+    },
+    {
+      name: "كريم أحمد",
+      role: "مصور محترف",
+      avatar: image03,
+    },
+    {
+      name: "رامي حسن",
+      role: "مصور رحلات",
+      avatar: image04,
+    },
+    {
+      name: "طارق محمود",
+      role: "مصور استوديو",
+      avatar: image05,
+    },
+    {
+      name: "يوسف علي",
+      role: "مصور شوارع",
+      avatar: image06,
+    },
+    {
+      name: "مروان عبدالله",
+      role: "مصور أعراس",
+      avatar: image07,
+    },
+    {
+      name: "زياد سامي",
+      role: "مصور مواليد",
+      avatar: image08,
+    },
+    {
+      name: "أنس وليد",
+      role: "فنان بصري",
+      avatar: image09,
+    },
+    {
+      name: "حسام ناصر",
+      role: "مصور طبيعة",
+      avatar: image10,
+    },
+    {
+      name: "فهد خالد",
+      role: "مصور بورتريه",
+      avatar: image12,
+    },
+    {
+      name: "باسم عمر",
+      role: "مصور محترف",
+      avatar: image13,
+    },
+    {
+      name: "رامز سعيد",
+      role: "مصور رحلات",
+      avatar: image14,
+    },
+    {
+      name: "وليد مازن",
+      role: "مصور استوديو",
+      avatar: image15,
+    },
+    {
+      name: "عادل ياسر",
+      role: "مصور شوارع",
+      avatar: image16,
+    },
+    {
+      name: "معاذ إبراهيم",
+      role: "مصور أعراس",
+      avatar: image17,
+    },
+    {
+      name: "رائد فهد",
+      role: "مصور مواليد",
+      avatar: image18,
+    },
+    {
+      name: "نبيل سامر",
+      role: "فنان بصري",
+      avatar: image19,
+    },
+    {
+      name: "أيمن حمد",
+      role: "مصور طبيعة",
+      avatar: image20,
+    },
+    {
+      name: "خالد يحيى",
+      role: "مصور بورتريه",
+      avatar: image21,
+    },
+    {
+      name: "حازم علي",
+      role: "مصور محترف",
+      avatar: image22,
+    },
+    {
+      name: "معتز حسن",
+      role: "مصور رحلات",
+      avatar: image23,
+    },
+    {
+      name: "شادي محمود",
+      role: "مصور استوديو",
+      avatar: image24,
+    },
+    {
+      name: "إياد محمد",
+      role: "مصور شوارع",
+      avatar: image25,
+    },
+    {
+      name: "بدر أحمد",
+      role: "مصور أعراس",
+      avatar: image26,
+    },
+    {
+      name: "سامح عبدالله",
+      role: "مصور مواليد",
+      avatar: image27,
+    },
+    {
+      name: "لؤي خالد",
+      role: "فنان بصري",
+      avatar: image28,
+    },
+    {
+      name: "عصام نادر",
+      role: "مصور مواليد",
+      avatar: image29,
+    },
+  ];
 
   return (
     <div className="bg-[#111111] text-white">
@@ -320,11 +319,11 @@ export default function WhoAreWe() {
             {team.map((person, index) => (
               <div
                 key={index}
-                className="rounded-3xl border border-neutral-800 bg-[#161616] p-6 text-center baseTransition group hover:border-orange-500/30"
+                className="baseTransition group rounded-3xl border border-neutral-800 bg-[#161616] p-6 text-center hover:border-orange-500/30"
               >
-                <div className="relative mx-auto size-25 group-hover:border-orange-500/30 rounded-full border-4 baseTransition border-neutral-800">
+                <div className="baseTransition relative mx-auto size-25 rounded-full border-4 border-neutral-800 group-hover:border-orange-500/30">
                   <img
-                  loading="lazy"
+                    loading="lazy"
                     src={person.avatar}
                     alt={person.name}
                     className="size-full rounded-full object-cover object-center"
@@ -333,28 +332,30 @@ export default function WhoAreWe() {
                     <FontAwesomeIcon icon={faCheck} />
                   </span>
                 </div>
-                <div className="mb-4 mt-5">
-                  <h3 className="text-lg font-bold text-white">{person.name}</h3>
-                <p className="text-sm font-medium text-orange-500">
-                  {person.role}
-                </p>
+                <div className="mt-5 mb-4">
+                  <h3 className="text-lg font-bold text-white">
+                    {person.name}
+                  </h3>
+                  <p className="text-sm font-medium text-orange-500">
+                    {person.role}
+                  </p>
                 </div>
                 <div className="centerByFlex gap-3">
                   <a
                     href="#"
-                    className="centerByFlex size-9 text-base rounded-lg bg-neutral-800 text-neutral-500 transition-colors hover:border-orange-500 hover:bg-orange-500 hover:text-white"
+                    className="centerByFlex size-9 rounded-lg bg-neutral-800 text-base text-neutral-500 transition-colors hover:border-orange-500 hover:bg-orange-500 hover:text-white"
                   >
                     <FontAwesomeIcon icon={faXTwitter} />
                   </a>
                   <a
                     href="#"
-                    className="centerByFlex size-9 text-base rounded-lg bg-neutral-800 text-neutral-500 transition-colors hover:bg-neutral-700 hover:text-white"
+                    className="centerByFlex size-9 rounded-lg bg-neutral-800 text-base text-neutral-500 transition-colors hover:bg-neutral-700 hover:text-white"
                   >
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                   <a
                     href="#"
-                    className="centerByFlex size-9 text-base rounded-lg bg-neutral-800 text-neutral-500 transition-colors hover:bg-blue-600 hover:text-white"
+                    className="centerByFlex size-9 rounded-lg bg-neutral-800 text-base text-neutral-500 transition-colors hover:bg-blue-600 hover:text-white"
                   >
                     <FontAwesomeIcon icon={faLinkedin} />
                   </a>
@@ -366,43 +367,42 @@ export default function WhoAreWe() {
       </section>
 
       <section className="relative overflow-hidden bg-linear-to-br from-orange-600 via-orange-500 to-yellow-500 px-3 py-20 md:px-4 xl:px-[10%]">
-        <div className="xl:container xl:mx-auto text-center space-y-6">
-            <h2 className="text-3xl font-bold text-white md:text-4xl">
-              لديك أسئلة؟ دعنا نتحدث!
-            </h2>
+        <div className="space-y-6 text-center xl:container xl:mx-auto">
+          <h2 className="text-3xl font-bold text-white md:text-4xl">
+            لديك أسئلة؟ دعنا نتحدث!
+          </h2>
 
-            <p className="mx-auto max-w-2xl text-lg text-white/80">
-              نحب أن نسمع منك. سواء كان لديك سؤال حول محتوانا، أو تريد المساهمة، أو تريد فقط إلقاء التحية، لا تتردد في التواصل.
-            </p>
+          <p className="mx-auto max-w-2xl text-lg text-white/80">
+            نحب أن نسمع منك. سواء كان لديك سؤال حول محتوانا، أو تريد المساهمة،
+            أو تريد فقط إلقاء التحية، لا تتردد في التواصل.
+          </p>
 
-            <div className="centerByFlex flex-wrap gap-4">
-               <Link
-               onClick={()=>{
+          <div className="centerByFlex flex-wrap gap-4">
+            <Link
+              onClick={() => {
                 scrollTo({
-                  top:0,
-                  behavior:"smooth"
-                })
-               }}
-                to="/"
-                className="max-sm:w-full rounded-xl centerByFlex border-black gap-2 bg-black px-8 py-4 text-base font-semibold border text-white baseTransition hover:-translate-y-0.5 hover:opacity-90"
-              >
-              <FontAwesomeIcon icon={faEnvelope} />    تواصل معنا 
-               
-              </Link>
-              <Link
-                to="/blog"
-                onClick={()=>{
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+              to="/"
+              className="centerByFlex baseTransition gap-2 rounded-xl border border-black bg-black px-8 py-4 text-base font-semibold text-white hover:-translate-y-0.5 hover:opacity-90 max-sm:w-full"
+            >
+              <FontAwesomeIcon icon={faEnvelope} /> تواصل معنا
+            </Link>
+            <Link
+              to="/blog"
+              onClick={() => {
                 scrollTo({
-                  top:0,
-                  behavior:"smooth"
-                })
-               }}
-                className="max-sm:w-full rounded-xl border border-white/40 py-4 px-8 text-base font-semibold text-white baseTransition  hover:bg-white hover:text-black"
-              >
-                تصفح المقالات
-              </Link>
-             
-            </div>
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+              className="baseTransition rounded-xl border border-white/40 px-8 py-4 text-base font-semibold text-white hover:bg-white hover:text-black max-sm:w-full"
+            >
+              تصفح المقالات
+            </Link>
+          </div>
         </div>
       </section>
     </div>
