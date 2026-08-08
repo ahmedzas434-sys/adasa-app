@@ -5,6 +5,7 @@ import Layout from "./components/Layout/Layout";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
 import Home from "./pages/Home/Home";
 import WhoAreWe from "./pages/WhoAreWe/WhoAreWe";
+import NotFound from "./pages/NotFound/NotFound";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -17,7 +18,7 @@ export default function App() {
           element: <Home />,
         },
         {
-          path: "/whoAreYou",
+          path: "/whoAreWe",
           element: <WhoAreWe/>,
         },
         {
@@ -28,6 +29,10 @@ export default function App() {
           path: "/blog",
           element: <Blog />,
         },
+         {
+      path:"/*",
+      element:<NotFound/>
+    }
       ],
     },
   ]);

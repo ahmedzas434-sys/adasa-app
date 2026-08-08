@@ -14,19 +14,15 @@
     color: #fff;
   }
 
-  html{
-  scroll-behavior: smooth;
-  scroll-padding-top: 50px;
-}
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+  }
 }
 
 @layer components {
   .centerByFlex {
     @apply flex items-center justify-center;
-  }
-
-  .opacityElementStyle {
-    @apply animate-[opacityElement_1s_ease-in-out_infinite_alternate] rounded-full bg-orange-500;
   }
 
   .buttonFooter {
@@ -42,5 +38,3 @@
     @apply transition-all duration-300;
   }
 }
-
-

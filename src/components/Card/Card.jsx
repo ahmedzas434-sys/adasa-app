@@ -15,6 +15,11 @@ export default function Card({
     readTime,
   },
 }) {
+ const convertDate = new Date(date).toLocaleDateString("ar-EG", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
   return (
     <React.Fragment>
       <Link
@@ -43,7 +48,7 @@ export default function Card({
             <div className="flex items-center gap-1 text-sm text-neutral-600">
               <FontAwesomeIcon icon={faClock} /> {readTime}{" "}
               <span className="mx-2 block size-1 rounded-full bg-neutral-600"></span>{" "}
-              {date}
+              {convertDate}
             </div>
             <h3 className="text-xl leading-6.25 font-bold text-white transition-all duration-500 group-hover:text-orange-500">
               {title}

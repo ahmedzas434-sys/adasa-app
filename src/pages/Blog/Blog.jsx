@@ -703,7 +703,12 @@ export default function Blog() {
 
   const [nameCategory, setNameCategory] = useState(category || "جميع المقالات");
 
-  const [counter, setCounter] = useState(posts.length);
+  let res;
+  if (category !== null) {
+    res = posts.filter((post) => post.category === nameCategory);
+  }
+
+  const [counter, setCounter] = useState(res?.length || posts.length);
 
   const [gridMenu, setGridMenu] = useState(1);
   function editeGridMenu(id) {

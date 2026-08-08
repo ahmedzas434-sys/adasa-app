@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import image from "../../assets/images/image11.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faMagnifyingGlass, faX } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
@@ -60,7 +60,7 @@ export default function Navbar() {
             </NavLink>
 
             <NavLink
-              to="/whoAreYou"
+              to="/whoAreWe"
               className={({ isActive }) =>
                 `rounded-full px-5.5 py-2.5 text-sm font-medium transition-all duration-300 ${
                   isActive
@@ -75,20 +75,7 @@ export default function Navbar() {
 
           <div className="flex items-center gap-3 max-md:hidden">
             <div className="centerByFlex group size-11 cursor-pointer rounded-xl border border-transparent transition hover:border-[#262626]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-4.5 text-neutral-500 transition group-hover:text-orange-500"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                />
-              </svg>
+             <FontAwesomeIcon icon={faMagnifyingGlass} className="text-base text-neutral-500 transition group-hover:text-orange-500"/>
             </div>
 
             <Link
@@ -99,15 +86,15 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <button
+          <div
             onClick={showMenu}
-            className="max-md:centerByFlex group size-[49.6px] cursor-pointer rounded-lg border border-transparent hover:border-[#262626] md:hidden"
+            className="centerByFlex group size-12 cursor-pointer rounded-xl border border-transparent hover:border-[#262626] md:hidden"
           >
             <FontAwesomeIcon
               className="text-xl text-neutral-400 transition group-hover:text-white"
               icon={isShowMenu ? faX : faBars}
             />
-          </button>
+          </div>
 
           <div
             className={`absolute inset-[100%_0_auto] hidden space-y-4 rounded-2xl border border-[#262626] bg-[#161616] p-4 transition-all duration-500 max-md:block ${
@@ -120,10 +107,10 @@ export default function Navbar() {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `rounded-full px-5.5 py-2.5 text-sm font-medium transition-all duration-300 ${
+                  `rounded-xl py-3 px-4 border text-sm font-medium transition-all duration-300 ${
                     isActive
-                      ? "bg-linear-to-r from-orange-500 to-orange-600 text-white"
-                      : "text-neutral-400 hover:text-white"
+                      ? "border-orange-500 text-orange-500 bg-orange-500/10"
+                      : "text-neutral-400 hover:text-white border-transparent hover:bg-[#1a1a1a]"
                   }`
                 }
               >
@@ -133,10 +120,10 @@ export default function Navbar() {
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
-                  `rounded-full px-5.5 py-2.5 text-sm font-medium transition-all duration-300 ${
+                  `rounded-xl py-3 px-4 border text-sm font-medium transition-all duration-300 ${
                     isActive
-                      ? "bg-linear-to-r from-orange-500 to-orange-600 text-white"
-                      : "text-neutral-400 hover:text-white"
+                      ? "border-orange-500 text-orange-500 bg-orange-500/10"
+                      : "text-neutral-400 hover:text-white border-transparent hover:bg-[#1a1a1a]"
                   }`
                 }
               >
@@ -144,12 +131,12 @@ export default function Navbar() {
               </NavLink>
 
               <NavLink
-                to="/whoAreYou"
+                to="/whoAreWe"
                 className={({ isActive }) =>
-                  `rounded-full px-5.5 py-2.5 text-sm font-medium transition-all duration-300 ${
+                  `rounded-xl py-3 px-4 border text-sm font-medium transition-all duration-300 ${
                     isActive
-                      ? "bg-linear-to-r from-orange-500 to-orange-600 text-white"
-                      : "text-neutral-400 hover:text-white"
+                      ? "border-orange-500 text-orange-500 bg-orange-500/10"
+                      : "text-neutral-400 hover:text-white border-transparent hover:bg-[#1a1a1a]"
                   }`
                 }
               >
@@ -159,7 +146,7 @@ export default function Navbar() {
 
             <Link
               to="/blog"
-              className="btnGlobal w-full transition hover:-translate-y-0.5"
+              className="btnGlobal block text-center transition hover:-translate-y-0.5"
             >
               ابدأ القراءة
             </Link>

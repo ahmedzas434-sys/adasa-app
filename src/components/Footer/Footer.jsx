@@ -15,7 +15,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
   return (
     <React.Fragment>
-      <footer className="relative bg-neutral-950">
+      <footer className="relative bg-neutral-950 overflow-hidden">
         <div className="absolute blur-3xl top-0 left-1/4 size-96 bg-orange-500/5 rounded-full"></div>
         <div className="absolute blur-3xl bottom-0 right-1/4 size-96 bg-yellow-500/5 rounded-full"></div>
 
@@ -43,11 +43,13 @@ export default function Footer() {
               </div>
 
               <CardFooter
+              key={1}
                 nameHead={"استكشف"}
                 nameLink={["الرئيسية", "المدونة", "من نحن"]}
               />
 
               <CardFooter
+              key={2}
                 nameHead={"التصنيفات"}
                 nameLink={["إضاءة", "بورتريه", "مناظر طبيعية", "تقنيات"]}
               />

@@ -17,22 +17,34 @@ export default function CardMenu({
     readTime,
   },
 }) {
+  const convertDate = new Date(date).toLocaleDateString("ar-EG", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
   return (
     <React.Fragment>
-      <Link to={`/blogDetails/${id}`} className="baseTransition flex max-md:flex-col border group hover:border-orange-500/30 border-neutral-800 rounded-2xl overflow-hidden">
-        <div className="overflow-hidden relative w-full md:w-72 lg:w-80 h-52 md:h-auto">
+      <Link
+        to={`/blogDetails/${id}`}
+        onClick={() => {
+          scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }}
+        className="baseTransition group flex overflow-hidden rounded-2xl border border-neutral-800 hover:border-orange-500/30 max-md:flex-col"
+      >
+        <div className="relative h-52 w-full overflow-hidden md:h-auto md:w-72 lg:w-80">
           <img
             src={image}
             alt={role}
-            className="max-md:object-cover group-hover:scale-103 baseTransition size-1/1"
+            className="baseTransition size-1/1 group-hover:scale-103 max-md:object-cover"
           />
 
-          <div className="absolute baseTransition inset-0 bg-linear-to-l from-neutral-900/50 to-transparent opacity-0 group-hover:opacity-100">
-
-          </div>
+          <div className="baseTransition absolute inset-0 bg-linear-to-l from-neutral-900/50 to-transparent opacity-0 group-hover:opacity-100"></div>
         </div>
 
-        <div className="max-md:w-full md:w-2/3 gap-3 grow flex flex-col justify-between p-6 bg-neutral-900">
+        <div className="flex grow flex-col justify-between gap-3 bg-neutral-900 p-6 max-md:w-full md:w-2/3">
           <div className="flex items-center gap-3">
             <span className="rounded-xl border border-orange-500/20 bg-orange-500/10 px-3 py-0.5 text-sm font-semibold text-orange-500">
               {category}
@@ -43,31 +55,34 @@ export default function CardMenu({
             </p>
             <p className="text-neutral-500">
               <FontAwesomeIcon className="me-1" icon={faCalendar} />
-                {date}
+              {convertDate}
             </p>
           </div>
 
-          <h3 className="font-bold text-xl lg:text-2xl baseTransition text-white group-hover:text-orange-500">{title}</h3>
+          <h3 className="baseTransition text-xl font-bold text-white group-hover:text-orange-500 lg:text-2xl">
+            {title}
+          </h3>
 
-          <p className="text-neutral-500 leading-relaxed">
-            {excerpt}
-          </p>
+          <p className="leading-relaxed text-neutral-500">{excerpt}</p>
 
-          <div className="flex justify-between items-center ">
+          <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
-              className="size-10 object-cover rounded-full"
+                className="size-10 rounded-full object-cover"
                 src={avatar}
                 alt={role}
               />
               <div>
-                <h4 className="text-sm leading-5 font-semibold text-white">{name}</h4>
+                <h4 className="text-sm leading-5 font-semibold text-white">
+                  {name}
+                </h4>
                 <p className="text-xs text-neutral-500">{role}</p>
               </div>
             </div>
 
-            <span className="text-orange-500 text-sm flex items-center gap-2 group-hover:gap-3 baseTransition font-[600] leading-5">
-              اقرأ المقال <FontAwesomeIcon icon={faArrowLeftLong} className="" />
+            <span className="baseTransition flex items-center gap-2 text-sm leading-5 font-[600] text-orange-500 group-hover:gap-3">
+              اقرأ المقال{" "}
+              <FontAwesomeIcon icon={faArrowLeftLong} className="" />
             </span>
           </div>
         </div>
